@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <?php include 'process_form.php'; ?>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none; /* Remove the border */
+            background: none; /* Set background to none for transparency */
+            color: #800020; /* Black text color */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition to the background color */
+        }
+
+
+
+        /* Adjust the spacing between buttons */
+        a:not(:last-child) button {
+            margin-right: 10px;
+            margin-bottom: 0; /* Remove margin at the bottom of the buttons */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', Serif,serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .header img {
+            max-width: 200%;
+            height: auto;
+            width: 300px;
+        }
+
+
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row; /* Set to row for horizontal layout */
+            text-align: left;
+            padding: 20px;
+            margin: 0; /* Add this line to set margin to zero */
+            background-color:  #f5f2f2;
+        }
+.combo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+        .profile-image {
+            max-width: 30%;
+            height: auto;
+            margin-right: 20px; /* Add margin for spacing between image and text */
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            color: #800020;
+
+        }
+
+        h2 {
+            color: #800020;
+            margin-bottom: 10px; /* Adjust the bottom margin as needed */
+        }
+        h3{
+            color: #800020;
+        }
+
+        p {
+            margin-top: 0; /* Remove top margin to bring it closer to h2 */
+        }
+        .linkedin {
+            width: 45px; /* Pas de breedte aan zoals nodig */
+            height: 45px; /* Pas de hoogte aan zoals nodig */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: none; /* Hide labels by default */
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        .submit{
+            border-style: solid;
+            border-width: thin;
+            background-color: #800020;
+            width: 100px; /* Adjust the width as needed */
+            height: 40px;
+            margin-top: 10px;
+        }
+        .submit button.gray {
+            color: white;
+        }
+        </style>
+    <script>
+        function showPlaceholder(inputId) {
+            const input = document.getElementById(inputId);
+
+            // Show placeholder only if the input is empty
+            if (input.value === '') {
+                input.placeholder = inputId.charAt(0).toUpperCase() + inputId.slice(1);
+            }
+        }
+
+        function clearPlaceholder(inputId) {
+            const input = document.getElementById(inputId);
+            input.placeholder = '';
+        }
+
+        function restorePlaceholder(inputId) {
+            const input = document.getElementById(inputId);
+
+            // Restore placeholder only if the input is empty
+            if (input.value === '') {
+                input.placeholder = inputId.charAt(0).toUpperCase() + inputId.slice(1);
+            }
+        }
+    </script>
+</head>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$bedanktMessage = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $company = $_POST["company"];
+    $email = $_POST["email"];
+    $message = $_POST["message"]; // New field for message
+
+    $to = "a.hajiibrahim@outlook.com";
+    $subject = "New Contact Form Submission";
+    $messageBody = "Name: $name\nCompany: $company\nEmail: $email\n\nMessage:\n$message";
+
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $messageBody, $headers)) {
+        $bedanktMessage = 'Bedankt!';
+    } else {
+        $bedanktMessage = 'Error: Unable to send the email. Please try again later.';
+    }
+}
+?>
+<body>
+<a href="abdessamadachalhi.nl.html">
+    <button>home</button>
+</a>
+<a href="contact.html">
+    <button>contact</button>
+</a>
+
+<a href="overmij.html">
+    <button>Over mij</button>
+</a>
+<a href="projecten.html">
+    <button>projecten</button>
+</a>
+<div class="header">
+    <img src="https://i.imgur.com/xVij2yW.png" alt="Logo">
+</div>
+
+<div class="profile-container">
+    <img class="profile-image" src="https://i.imgur.com/q5Iz6Cs.png">
+<div class="text-container">
+<h2>neem contact op</h2>
+
+    <a href="mailto:abdessamad.achalhi@outlook.com">
+        <button>abdessamad.achalhi@hotmail.com</button>
+    </a>
+    <div class="combo">
+    <div class="linkedin">
+    <h2>Linkedin</h2>
+    <a href="https://www.linkedin.com/in/samad-achalhi/"><img src="https://i.imgur.com/DW8Ft7H.png" alt="Logo" class="linkedin"></a>
+    </div>
+        <form action="" method="post">
+
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" onfocus="clearPlaceholder('Naam')" onblur="restorePlaceholder('Naam')" placeholder="Naam" required>
+
+            <label for="company">Bedrijfsnaam:</label>
+            <input type="text" id="company" name="company" onfocus="clearPlaceholder('Bedrijfsnaam')" onblur="restorePlaceholder('Bedrijsnaam')" placeholder="Bedrijsnaam">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" onfocus="clearPlaceholder('email')" onblur="restorePlaceholder('email')" placeholder="Email" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" rows="4" onfocus="clearPlaceholder('Bericht')" onblur="restorePlaceholder('bericht')" placeholder="Bericht" required></textarea>
+
+            <div class="submit">
+                <button type="submit" class="gray">Verzend</button>
+                <?php echo $bedanktMessage; ?>
+            </div>
+
+        </form>
+</div>
+</div>
+
+
+</div>
+
+<a href="abdessamadachalhi.nl.html">
+    <button>home</button>
+</a>
+<a href="contact.html">
+    <button>contact</button>
+</a>
+
+<a href="overmij.html">
+    <button>Over mij</button>
+</a>
+<a href="projecten.html">
+    <button>projecten</button>
+</a>
+</body>
+</html>

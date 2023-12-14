@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projecten</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            color: #800020;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        a:not(:last-child) button {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', Serif, serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .header img {
+            max-width: 200%;
+            height: auto;
+            width: 300px;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: left;
+            padding: 20px;
+            margin: 0;
+            background-color: #f5f2f2;
+
+        }
+        .totoverall-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: left;
+            padding: 20px;
+            margin: 0;
+        }
+        .stage-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: left;
+            padding: 20px;
+            margin: 0;
+        }
+        .be-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: left;
+            padding: 20px;
+            margin: 0;
+        }
+        .tohoverall-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f5f2f2;
+        }
+        .comfortableall-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f5f2f2;
+        }
+        .herbestemmenall-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f5f2f2;
+        }
+
+        .profile-image {
+            max-width: 30%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+          .tot-container {
+            display: flex;
+            flex-direction: column;
+              align-items: center; /* Center horizontally */
+              text-align: left; /* Center horizontally */
+        }
+        .ministage-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            text-align: left; /* Center horizontally */
+        }
+        .minibe-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            text-align: left; /* Center horizontally */
+        }
+        .toh-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            text-align: center; /* Center horizontally */
+        }
+        .comfortable-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            text-align: center; /* Center horizontally */
+        }
+        .herbestemmen-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            text-align: center; /* Center horizontally */
+        }
+        .text-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Center horizontally */
+            text-align: center; /* Center horizontally */
+        }
+.title-container{
+
+    flex-direction: column;
+
+
+}
+.sliderplusvid-container{
+    flex-direction: row;
+}
+        h2 {
+            color: #800020;
+            margin-bottom: 10px;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .slider img.active {
+            opacity: 1;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+<a href="abdessamadachalhi.nl.html">
+    <button>home</button>
+</a>
+<a href="contact.html">
+    <button>contact</button>
+</a>
+
+<a href="overmij.html">
+    <button>Over mij</button>
+</a>
+<a href="projecten.html">
+    <button>projecten</button>
+</a>
+<div class="header">
+    <img src="https://i.imgur.com/xVij2yW.png" alt="Logo">
+</div>
+
+<div class="profile-container">
+
+
+        <div class="text-container">
+            <img class="profile-image" src=https://i.imgur.com/wIxbvJA.png>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qCYwEJ6OWFo" frameborder="0" allowfullscreen></iframe>
+
+            <div class="title-container">
+                <h2>Minor progammeren python</h2>
+                <p>Begin jaar 4 krijgen we de gelegenheid om gedurende een half jaar zelf een minor te kiezen die aansluit bij mijn interesses. Mijn keuze viel op de minor Programmeren met Python. Deze minor wordt online aangeboden door Harvard University en biedt een basisbegrip van programmeren. Met de opgedane kennis kon ik onder andere deze website creëren. Hier links ziet u beeld en geluid voor mijn eindproject van deze minor!</p>
+            </div>
+
+
+    </div>
+    </div>
+<div class="totoverall-container">
+    <div class="tot-container">
+        <h2>Transformatie Onderzoek Techniek</h2>
+        <p>Eind jaar 3 heb ik deelgenomen met het project TOT (transformatie, onderzoek en techniek).<br>
+            Binnen dit project hebben we de technische aspecten onderzocht <br>
+            van de transformatie van een oud kantoorpand naar een diplomaten school. <br>
+            Mijn betrokkenheid lag voornamelijk bij het bouwmanagement en het tekenwerk. <br>
+            Architectuur en bouwtechnologie waren overkoepelende aandachtspunten.
+            Hier rechts wat impressie beelden!
+        </p>
+    </div>
+    <div class="slider" id="slider1">
+        <button class="arrow arrow-left" onclick="prevSlide('slider1')">◄</button>
+        <img id="img-1-1" class="active" src="https://i.imgur.com/7FdwS9e.png" alt="Image 1"/>
+        <img id="img-1-2" src="https://i.imgur.com/0Eodjae.png" alt="Image 2"/>
+        <img id="img-1-3" src="https://i.imgur.com/xFj2Pdz.png" alt="Image 3"/>
+        <img id="img-1-4" src="https://i.imgur.com/8SgaJGt.png" alt="Image 4"/>
+        <img id="img-1-5" src="https://i.imgur.com/OqupfmA.png" alt="Image 5"/>
+        <img id="img-1-6" src="https://i.imgur.com/WPJPZSi.png" alt="Image 6"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider1')">►</button>
+    </div>
+</div>
+<div class="tohoverall-container">
+    <div class="slider" id="slider2">
+        <button class="arrow arrow-left" onclick="prevSlide('slider2')">◄</button>
+        <img id="img-2-1" class="active" src="https://i.imgur.com/wGvObee.png" alt="Image 1"/>
+        <img id="img-2-2" src="https://i.imgur.com/8Hjp2cH.png" alt="Image 2"/>
+        <img id="img-2-3" src="https://i.imgur.com/H3ZuY3P.png" alt="Image 3"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider2')">►</button>
+    </div>
+    <div class="toh-container">
+        <h2>Transformatie Onderzoek Haalbaarheid</h2>
+        <p>Midden in jaar 3 heb ik een project mogen doen. Dit project richtte zich op een oud kantoorpand, waarbij de focus ligt op de haalbaarheid. Er moest een plan worden ontwikkeld voor de herbestemming van het pand, waarbij een evenwichtige verdeling tussen woningen, horeca en andere functies essentieel was. Daarnaast hebben we op stedenbouwkundig niveau een herindeling gerealiseerd. Hier links wat impressie beelden!
+        </p>
+    </div>
+</div>
+<div class="stage-container">
+    <div class="ministage-container">
+        <h2>Stage</h2>
+        <p>Begin jaar 3 ben ik actief de bouwpraktijk ingedoken voor mijn stage. <br>
+            Mijn meerwerkstage heb ik dan gelopen bij het gerenommeerde aannemersbedrijf ERA Contour. <br>
+            Dit is een stage geweest van een half jaar. <br>Mijn eerste deel van mijn stage heb ik gelopen bij de afdeling uitvoering/werkvoorbereiding van de bestaande bouw. <br>
+            Het tweede deel van mijn meewerkstage vond plaats op de afdeling projectontwikkeling voor nieuwbouw. <br>
+            Gedurende deze stage kreeg ik de kans om veel bij te leren en te werken met nieuwe tools zoals Bluebeam en Naviworks. Al met al was het een bijzonder plezierige en leerzame stage!</p>
+    </div>
+
+    <div class="slider" id="slider3">
+        <button class="arrow arrow-left" onclick="prevSlide('slider2')">◄</button>
+        <img id="img-3-1" class="active" src="https://i.imgur.com/DjALIef.png" alt="Image 1"/>
+        <img id="img-3-2" src="https://i.imgur.com/LEhqqRR.jpeg" alt="Image 2"/>
+        <img id="img-3-3" src="https://i.imgur.com/6RWzK9f.jpeg" alt="Image 3"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider2')">►</button>
+
+
+    </div>
+</div>
+<div class="comfortableall-container">
+    <div class="slider" id="slider4">
+        <button class="arrow arrow-left" onclick="prevSlide('slider2')">◄</button>
+        <img id="img-4-1" class="active" src="https://i.imgur.com/NZOuCTe.png" alt="Image 1"/>
+        <img id="img-4-2" src="https://i.imgur.com/FkfJA8j.png" alt="Image 2"/>
+        <img id="img-4-3" src="https://i.imgur.com/5jWzhem.png" alt="Image 3"/>
+        <img id="img-4-4" src="https://i.imgur.com/p07rYnZ.png" alt="Image 3"/>
+        <img id="img-4-5" src="https://i.imgur.com/O3RYsqZ.png" alt="Image 3"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider2')">►</button>
+    </div>
+    <div class="comfortable-container">
+        <h2>Comfortable </h2>
+        <p>Eind jaar 2 heb ik een project uitgevoerd waarbij de toepassing van BIM (Bouwwerk Informatie Model) van essentieel belang was. Elk teamlid kreeg een specifiek onderdeel toegewezen, met overkoepelende ontwerpuitgangspunten: een U-vorm zonder trappen. In mijn rol binnen dit project heb ik me gericht op het constructieontwerp en de bijbehorende berekeningen. We hebben gebruikgemaakt van Solibri om onze modellen met elkaar te controleren. Op dat moment werd duidelijk hoe cruciaal effectieve communicatie is binnen dit proces. Hier links wat impressie beelden!</p>
+    </div>
+</div>
+<div class="be-container">
+    <div class="minibe-container">
+        <h2>BE project</h2>
+        <p>Midden jaar 2 heb ik deelgenomen aan een interdisciplinair project waarbij verschillende opleidingen waren betrokken. Vanuit mijn studie Bouwkunde kreeg ik de rol van projectontwikkelaar toegewezen. Samen hebben we het volledige gebied delft campus langs het water getransformeerd tot een veelzijdige zone voor wonen, werken en recreatie.
+            Hier rechts wat impressie beelden!
+        </p>
+    </div>
+    <div class="sliderplusvid-container">
+    <div class="slider" id="slider5">
+        <button class="arrow arrow-left" onclick="prevSlide('slider2')">◄</button>
+        <img id="img-5-1" class="active" src="https://i.imgur.com/AeGWAwo.jpeg" alt="Image 1"/>
+        <img id="img-5-2" src="https://i.imgur.com/Zl1twwH.jpeg" alt="Image 2"/>
+        <img id="img-5-3" src="https://i.imgur.com/xwltOX7.jpeg" alt="Image 3"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider2')">►</button>
+</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ua93PuseS6M" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+</div>
+<div class="herbestemmenall-container">
+    <div class="slider" id="slider6">
+        <button class="arrow arrow-left" onclick="prevSlide('slider2')">◄</button>
+        <img id="img-6-1" class="active" src="https://i.imgur.com/3PUIVTe.png" alt="Image 1"/>
+        <img id="img-6-2" src="https://i.imgur.com/Zy9T1jn.png" alt="Image 2"/>
+        <img id="img-6-3" src="https://i.imgur.com/fSGFFn7.png" alt="Image 3"/>
+        <img id="img-6-4" src="https://i.imgur.com/TZOoMVe.png" alt="Image 4"/>
+        <button class="arrow arrow-right" onclick="nextSlide('slider2')">►</button>
+
+
+    </div>
+    <div class="herbestemmen-container">
+        <h2>Herbestemmen</h2>
+        <p>Begin jaar 2 ben ik aan de slag met een herbestemmingsproject, waarbij we een oude kerk transformeerden tot woningen. Dit project vereiste het omgaan met een complex Programma van Eisen (PVE). Hierbij leerde je ook omgaan met moeilijke klantgesprekken. Het proces betrof tevens de uitdaging van het omgaan met een veeleisende opdrachtgever. Hoe ga je bijvoorbeeld om met situaties waarin het niet mogelijk is om aan alle gestelde voorwaarden te voldoen? Dit alles maakte de ervaring buitengewoon leerzaam.  Zie hier links een impressie!</p>
+
+    </div>
+</div>
+
+<a href="abdessamadachalhi.nl.html">
+    <button>home</button>
+</a>
+<a href="contact.html">
+    <button>contact</button>
+</a>
+
+<a href="overmij.html">
+    <button>Over mij</button>
+</a>
+<a href="projecten.html">
+    <button>projecten</button>
+</a>
+<script>
+    let sliders = {};
+
+    function changeSlide(sliderId, n) {
+        sliders[sliderId].currentImg = n !== undefined ? n : (sliders[sliderId].currentImg + 1) % sliders[sliderId].imgs.length;
+
+        for (let i = 0; i < sliders[sliderId].imgs.length; i++) {
+            sliders[sliderId].imgs[i].classList.remove('active');
+        }
+
+        sliders[sliderId].imgs[sliders[sliderId].currentImg].classList.add('active');
+    }
+
+    function nextSlide(sliderId) {
+        changeSlide(sliderId, (sliders[sliderId].currentImg + 1) % sliders[sliderId].imgs.length);
+    }
+
+    function prevSlide(sliderId) {
+        changeSlide(sliderId, (sliders[sliderId].currentImg - 1 + sliders[sliderId].imgs.length) % sliders[sliderId].imgs.length);
+    }
+
+    function createSlider(sliderId) {
+        sliders[sliderId] = {
+            imgs: document.querySelectorAll(`#${sliderId} img`),
+            currentImg: 0
+        };
+
+        setInterval(() => nextSlide(sliderId), 2000); // Auto-advance every 2 seconds
+
+        // Add event listeners for arrow buttons
+        document.querySelector(`#${sliderId} .arrow-left`).onclick = () => prevSlide(sliderId);
+        document.querySelector(`#${sliderId} .arrow-right`).onclick = () => nextSlide(sliderId);
+    }
+
+    window.onload = function () {
+        createSlider('slider1');
+        createSlider('slider2');
+        createSlider('slider3');
+        createSlider('slider4');
+        createSlider('slider5');
+        createSlider('slider6');
+        // Add more sliders as needed
+    };
+</script>
+</body>
+</html>
